@@ -1,0 +1,18 @@
+{
+  "name": "wavethumb",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://www.cedaro.com/",
+  "license": "GPL-2.0+",
+  "repository": "cedaro/wavethumb",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "develop": "webpack --watch"
+  }
+}

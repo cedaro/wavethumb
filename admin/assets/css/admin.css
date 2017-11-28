@@ -1,0 +1,20 @@
+.wavethumb-canvas-container {
+	height: 0;
+	overflow: hidden;
+	width: 0;
+}
+
+.wavethumb-preview canvas {
+	max-width: 100%;
+}
+
+.wavethumb-preview img {
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+.wavethumb-preview .spinner {
+	float: none;
+	margin-top: 0;
+}

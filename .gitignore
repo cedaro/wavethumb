@@ -1,0 +1,9 @@
+.DS_Store
+admin/assets/js/*.js.map
+admin/assets/js/*.min.js
+coverage/
+dist/
+languages/wavethumb.pot
+node_modules/
+phpcs.log
+/vendor/
