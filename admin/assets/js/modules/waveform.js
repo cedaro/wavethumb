@@ -1,6 +1,7 @@
 export default class Waveform {
-	constructor({ buffer, length = 1800 }) {
+	constructor({ buffer, color = 'black', length = 1800 }) {
 		this.buffer = buffer;
+		this.color = color;
 		this.length = length;
 	}
 
@@ -31,6 +32,7 @@ export default class Waveform {
 		}
 
 		context.lineTo( 0, 0 );
+		context.fillStyle = this.color;
 		context.fill();
 
 		return this;

@@ -25,11 +25,12 @@ function loadAudio( url ) {
 	});
 }
 
-function generateWaveform({ audioId, audioUrl, filename, screen }) {
+function generateWaveform({ audioId, audioUrl, color, filename, screen }) {
 	return loadAudio( audioUrl )
 		.then( buffer => {
 			const waveform = new Waveform({
-				buffer: buffer
+				buffer: buffer,
+				color: color
 			});
 
 			waveform.draw({
@@ -77,6 +78,7 @@ screen.button.addEventListener( 'click', e => {
 	generateWaveform({
 		audioId: settings.attachmentId,
 		audioUrl: settings.attachmentUrl,
+		color: settings.waveformColor,
 		filename: settings.waveformFilename,
 		screen: screen
 	});

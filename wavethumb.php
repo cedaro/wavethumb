@@ -75,6 +75,7 @@ add_action( 'admin_enqueue_scripts', function() {
 	wp_localize_script( 'wavethumb-edit-attachment', '_waveThumbSettings', array(
 		'attachmentId'     => $attachment_id,
 		'attachmentUrl'    => esc_url_raw( wp_get_attachment_url( $attachment_id ) ),
+		'waveformColor'    => apply_filters( 'wavethumb_color', 'black' ),
 		'waveformFilename' => $waveform_filename,
 		'waveformUrl'      => esc_url_raw( $waveform_url ),
 	) );
