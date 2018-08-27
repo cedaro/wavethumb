@@ -63,6 +63,7 @@ add_action( 'admin_enqueue_scripts', function() {
 
 	$file = get_attached_file( $attachment_id );
 	$waveform_filename = str_replace( '.', '-', basename( $file ) ) . '-waveform.png';
+	$waveform_filename = apply_filters( 'wavethumb_filename', $waveform_filename, $attachment_id );
 
 	$waveform_id  = get_post_meta( $attachment_id, '_waveform_id', true );
 	$waveform_url = '';
